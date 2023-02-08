@@ -1,0 +1,52 @@
+.nav-link {
+    width: 6rem;
+}
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+    color: #4e4e4e !important;
+}
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+    background-color: #202020 !important;
+}
+
+.navbar-toggler{
+    background: !important;
+}
+
+.navbar-toggler-icon{
+    color: var(--light) !important;
+}
+
+.MuiFormGroup-root {
+    display: inline !important;
+}
+
+.css-j204z7-MuiFormControlLabel-root {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.lightIcon {
+    color: rgb(240, 229, 229);
+}
+
+.darkIcon {
+    color: #4e4e4ea8;
+}
+
+.brandIcon {
+    margin-right: 5px;
+}
+
+.nameBrand {
+    font-size: x-large;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    opacity: .75;
+}
+
+.nameBrand:hover{
+    opacity: 1;
+    transition: opacity 1s linear;
+}
