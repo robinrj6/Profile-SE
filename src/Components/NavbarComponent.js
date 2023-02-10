@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import React from "react";
-import { FormGroup, FormControlLabel, Switch } from '@mui/material';
+import { FormGroup, Switch } from '@mui/material';
 import RoofingIcon from '@mui/icons-material/Roofing';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
@@ -14,9 +14,15 @@ import { ThemeContext, themes } from '../assets/extras/themeContext';
 
 export default function NavbarComponent(props) {
     const { darkMode, setDarkMode } = props;
+    let theme;
+    if (darkMode) {
+        theme="dark";
+    } else {
+        theme="light";
+    }
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+            <Navbar collapseOnSelect expand="lg" bg={theme} variant={theme}>
                 <Container>
                     <Navbar.Brand href="/"><SmartToyIcon className='brandIcon' /><span className='nameBrand'>Robin</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

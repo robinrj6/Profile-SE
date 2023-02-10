@@ -10,14 +10,6 @@
     background-color: #202020 !important;
 }
 
-.navbar-toggler{
-    background: !important;
-}
-
-.navbar-toggler-icon{
-    color: var(--light) !important;
-}
-
 .MuiFormGroup-root {
     display: inline !important;
 }
@@ -46,7 +38,7 @@
     opacity: .75;
 }
 
-.nameBrand:hover{
+.nameBrand:hover {
     opacity: 1;
     transition: opacity 1s linear;
 }
