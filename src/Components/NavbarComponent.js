@@ -22,18 +22,20 @@ export default function NavbarComponent(props) {
     }
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg={theme} variant={theme}>
+            <Navbar collapseOnSelect expand="lg" bg={theme} variant={theme} 
+            fixed="top"
+            >
                 <Container>
                     <Navbar.Brand href="/"><SmartToyIcon className='brandIcon' /><span className='nameBrand'>Robin</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="m-auto">
-                            <Nav.Link href="#home">
+                            <Nav.Link href="#main">
                                 <RoofingIcon>
                                     Home
                                 </RoofingIcon>
                             </Nav.Link>
-                            <Nav.Link href="#projects">
+                            <Nav.Link href="#skills">
                                 <WorkspacePremiumIcon>
                                     Projects
                                 </WorkspacePremiumIcon>

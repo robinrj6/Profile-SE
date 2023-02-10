@@ -3,6 +3,7 @@
     --dark: #222222;
     --white: #efefef;
     transition: all .2s linear;
+    scroll-behavior: smooth;
 }
 
 .white-content {
@@ -16,5 +17,5 @@
 }
 
 .section {
-    height: 90vh;
+    height: 100vh;
 }
