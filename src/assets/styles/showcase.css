@@ -1,0 +1,37 @@
+.showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+}
+
+.cardHeader {
+    position: absolute;
+    transition: all 0.3s ease;
+    transform: translateY(150%);
+    font-size: larger;
+}
+
+.card:hover .cardHeader {
+    font-size: medium;
+    transform: translateY(0%);
+}
+
+ul {
+    list-style: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translateY(80%);
+}
+
+.card:hover ul {
+    opacity: 1;
+    transform: translateY(50%);
+}
+
+.item {
+    padding-bottom: .2rem;
+}

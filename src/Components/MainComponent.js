@@ -2,15 +2,16 @@ import NavbarComponent from "./NavbarComponent";
 import React from "react";
 import HomeComponent from "./HomeComponent";
 import '../assets/styles/main.css';
-import SkillComponent from "./SkillsComponent";
+import ShowCaseComponent from "./ShowCaseComponent";
 
 export default function MainComponent() {
-    const [darkMode, setDarkMode] = React.useState(true);
+    const [darkMode, setDarkMode] = React.useState(false);
     return (
         <div className='main' id="main">
             <NavbarComponent darkMode={darkMode} setDarkMode={setDarkMode}/>
             <HomeComponent darkMode={darkMode} setDarkMode={setDarkMode} />
-            <SkillComponent darkMode={darkMode} setDarkMode={setDarkMode}/>
+            {/* <SkillComponent darkMode={darkMode} setDarkMode={setDarkMode}/> */}
+            <ShowCaseComponent darkMode={darkMode} setDarkMode={setDarkMode}/>
         </div>
     );
 }

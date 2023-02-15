@@ -16,14 +16,14 @@ export default function NavbarComponent(props) {
     const { darkMode, setDarkMode } = props;
     let theme;
     if (darkMode) {
-        theme="dark";
+        theme = "dark";
     } else {
-        theme="light";
+        theme = "light";
     }
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg={theme} variant={theme} 
-            fixed="top"
+            <Navbar collapseOnSelect expand="lg" bg={theme} variant={theme}
+                fixed="top"
             >
                 <Container>
                     <Navbar.Brand href="/"><SmartToyIcon className='brandIcon' /><span className='nameBrand'>Robin</span></Navbar.Brand>
@@ -35,7 +35,7 @@ export default function NavbarComponent(props) {
                                     Home
                                 </RoofingIcon>
                             </Nav.Link>
-                            <Nav.Link href="#skills">
+                            <Nav.Link href="#showcase">
                                 <WorkspacePremiumIcon>
                                     Projects
                                 </WorkspacePremiumIcon>
@@ -53,7 +53,7 @@ export default function NavbarComponent(props) {
                                     {({ changeTheme }) => (<Switch onClick={() => {
                                         setDarkMode(!props.darkMode);
                                         changeTheme(darkMode ? themes.dark : themes.light);
-                                    }} />
+                                    }} defaultChecked />
                                     )}
                                 </ThemeContext.Consumer>
                                 <NightlightRoundIcon className='darkIcon' />
