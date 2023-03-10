@@ -29,9 +29,13 @@
 
 .brandIcon {
     margin-right: 5px;
+    margin-bottom: 10px;
 }
 
-.nameBrand {
+.navbar-brand{
+    justify-items: center;
+}
+.nameBrand { 
     font-size: x-large;
     font-weight: 600;
     font-family: 'Raleway', sans-serif;

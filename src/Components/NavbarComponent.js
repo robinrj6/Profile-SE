@@ -35,7 +35,7 @@ export default function NavbarComponent(props) {
                                     Home
                                 </RoofingIcon>
                             </Nav.Link>
-                            <Nav.Link href="#showcase">
+                            <Nav.Link href="#cert">
                                 <WorkspacePremiumIcon>
                                     Projects
                                 </WorkspacePremiumIcon>
