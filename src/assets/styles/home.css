@@ -2,22 +2,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     /* background-image: url('../images/celebrate.gif');
     background-repeat: no-repeat;
     background-size: 400px 400px;
     background-position: center; */
 }
 
+.canvas{
+    position: fixed;
+
+}
+
 .wrapper_home {
-    padding: 70px;
-    box-sizing: border-box;
+    position: relative;
+    top:-5rem;
+    left: -20rem;
+    width: 40rem;
+    z-index: 5;
+    /* box-sizing: border-box;
     border: 0px solid;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); 
     transform: translateY(0px);
     animation: float 6s ease-in-out infinite;
-    animation-delay: 3s;
+    animation-delay: 3s;*/
 }
 
 .nameHead {

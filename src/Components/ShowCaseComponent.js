@@ -49,7 +49,7 @@ export default function ShowCaseComponent(props) {
                             variants={boxVariant}
                             initial="hidden"
                             animate={control}
-                            className="box"    
+                            className="box"
                         >
                             <Card style={{ width: '20rem', height: '15rem', backgroundColor: theme }} >
                                 <Card.Body>

@@ -21,7 +21,7 @@ export default function NavbarComponent(props) {
         theme = "light";
     }
     return (
-        <div>
+        <div >
             <Navbar collapseOnSelect expand="lg" bg={theme} variant={theme}
                 fixed="top"
             >
